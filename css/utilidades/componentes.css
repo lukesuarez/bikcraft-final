@@ -77,6 +77,10 @@
 }
 
 .titulo {
+  background: url("../../img/dec/top-right.svg") no-repeat top right 20px;
+}
+
+.titulo {
   margin-bottom: 4px;
 }
 
