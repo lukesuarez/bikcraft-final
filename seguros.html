@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="descritpion" content="Biciletas elétricas de alta precisão e qualidade
+  <meta name="description" content="Biciletas elétricas de alta precisão e qualidade
     feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
   <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
@@ -13,7 +13,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:ital,wght@0,600;1,400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <title>Seguros | Bikcraft</title>
-</head>
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
 
 <body id="seguros">
   <header class="header-bg">
@@ -33,16 +35,16 @@
   </header>
 
   <main class="seguros-bg">
-    <div class="titulo-bg">
+    <div class="titulo-bg" data-anime="200">
       <div class="titulo container">
         <p class="font-2-l-b cor-5">Escolha o seguro</p>
         <h1 class="font-1-xxl cor-0">você seguro<span class="cor-p1">.</span></h1>
       </div>
     </div>
 
-    <div class="seguros container">
+    <div class="seguros container ">
 
-      <div class="seguros-item">
+      <div class="seguros-item fadeInLeft" data-anime="200">
         <h3 class="font-1-xl cor-6">PRATA</h3>
         <span class="font-1-xl cor-0">R$ 199 <span class="font-1-xs cor-6">mensal</span></span>
         <ul class="font-2-m cor-0">
@@ -51,9 +53,9 @@
           <li>Suporte 08h às 18h</li>
           <li>Cobertura Estadual</li>
         </ul>
-        <a href="./orcamento.html" class="botao secundario">Inscreva-se</a>
+        <a href="./orcamento.html?tipo=seguro&produto=prata" class="botao secundario">Inscreva-se</a>
       </div>
-      <div class="seguros-item">
+      <div class="seguros-item fadeInRight" data-anime="400">
         <h3 class="font-1-xl cor-p1">OURO</h3>
         <span class="font-1-xl cor-0">R$ 299 <span class="font-1-xs cor-6">mensal</span></span>
         <ul class="font-2-m cor-0">
@@ -64,7 +66,7 @@
           <li>Desconto em parceiros</li>
           <li>Acesso ao Clube Bikcraft</li>
         </ul>
-        <a href="./orcamento.html" class="botao">Inscreva-se</a>
+        <a href="./orcamento.html?tipo=seguro&produto=ouro" class="botao">Inscreva-se</a>
       </div>
     </div>
 
@@ -120,38 +122,38 @@
 
     <dl>
       <div>
-        <dt class="font-1-m-b">Qual forma de pagamento vocês aceitam?</dt>
-        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de créditos. Para pagamentos à vista
+        <dt><button class="font-1-m-b" aria-controls="pergunta1" aria-expanded="true"> forma de pagamento vocês aceitam?</button></dt>
+        <dd id="pergunta1" class="font-2-s cor-9 ativa">Aceitamos pagamentos parcelados em todos os cartões de créditos. Para pagamentos à vista
           aceitamos PIX e Boleto através de PagSeguro
         </dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Posso parcelar no boleto?</dt>
-        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de créditos. Para pagamentos à vista
+        <dt><button class="font-1-m-b" aria-controls="pergunta2" aria-expanded="false">Posso parcelar no boleto?</button></dt>
+        <dd id="pergunta2" class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de créditos. Para pagamentos à vista
           aceitamos PIX e Boleto através de PagSeguro
         </dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Aceitam pagamento à vista?</dt>
-        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de créditos. Para pagamentos à vista
+        <dt class="font-1-m-b"><button class="font-1-m-b" aria-controls="pergunta3" aria-expanded="false">Aceitam pagamento à vista?</button></dt>
+        <dd id="pergunta3" class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de créditos. Para pagamentos à vista
           aceitamos PIX e Boleto através de PagSeguro
         </dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Aceitam cartões digitais?</dt>
-        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de créditos. Para pagamentos à vista
+        <dt class="font-1-m-b"><button class="font-1-m-b" aria-controls="pergunta4" aria-expanded="false">Aceitam cartões digitais?</button></dt>
+        <dd id="pergunta4" class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de créditos. Para pagamentos à vista
           aceitamos PIX e Boleto através de PagSeguro
         </dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Aceitam pagamentos via boleto reservas?</dt>
-        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de créditos. Para pagamentos à vista
+        <dt class="font-1-m-b"><button class="font-1-m-b" aria-controls="pergunta5" aria-expanded="false">Aceitam pagamentos via boleto reservas?</button></dt>
+        <dd id="pergunta5" class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de créditos. Para pagamentos à vista
           aceitamos PIX e Boleto através de PagSeguro
         </dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Aceitam cartões internacionais?</dt>
-        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de créditos. Para pagamentos à vista
+        <dt class="font-1-m-b"><button class="font-1-m-b" aria-controls="pergunta6" aria-expanded="false">Aceitam cartões internacionais?</button></dt>
+        <dd id="pergunta6" class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de créditos. Para pagamentos à vista
           aceitamos PIX e Boleto através de PagSeguro
         </dd>
       </div>
@@ -196,6 +198,10 @@
       <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
+
 </body>
 
 </html>
